@@ -1,0 +1,42 @@
+form {
+    margin: 2em;
+  }
+  
+  .field {
+    float: left;
+  }
+  
+  label {
+    display: inline-block;
+    -webkit-transform: translate(-170px, 0);
+            transform: translate(-170px, 0);
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+  }
+  
+  input:focus ~ label,
+  input:valid ~ label {
+    -webkit-transform: translate(-170px, -30px);
+            transform: translate(-170px, -30px);
+  }
+  
+  input {
+    display: inline-block;
+    border: 0;
+    background: #fff;
+    border-bottom: 2px solid black;
+    text-indent: 0.5em;
+  }
+  
+  input[type="text"],
+  input[type="email"] {
+    padding: 0.75em 0;
+    -webkit-transition: background 0.2s ease;
+    transition: background 0.2s ease;
+  }
+  input[type="text"]:focus,
+  input[type="email"]:focus {
+    outline: 0;
+    background: #efefef;
+  }
+  

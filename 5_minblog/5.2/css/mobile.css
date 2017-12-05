@@ -1,0 +1,40 @@
+.side-bar {
+    position: relative;
+    width: 100%;
+    float: none;
+}
+
+.main {
+    width: 100%;
+    padding-left: 6px;
+    padding-right: 7px;
+}
+
+.article-list {
+    margin: 0;
+}
+
+.side-bar .nav,
+.side-bar .tag-list {
+    display: none;
+    text-align: center;
+}
+
+/* #menu-checkbox {
+    display: none;
+} */
+
+#menu-checkbox:checked ~ .nav,
+#menu-checkbox:checked ~ .tag-list {
+    display: block;
+}
+
+#menu-toggle {
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 4px;
+    font-size: 18px;
+    font-weight: 100;
+    color: rgba(red, green, blue, .8);
+}
