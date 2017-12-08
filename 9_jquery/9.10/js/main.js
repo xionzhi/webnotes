@@ -35,8 +35,8 @@ $(function () {
     // var result6 =validator.validator_pattern()
     // console.log(result6);
 
-    var test = new Input('#test');
-    var valid = test.validator.is_valid();
-    console.log('valid:', valid);
+    // var test = new Input('#test');
+    // var valid = test.validator.is_valid();
+    // console.log('valid:', valid);
 });
 

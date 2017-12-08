@@ -1,0 +1,19 @@
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.bold {
+    font-weight: 1000;
+}
+
+.red.bold {
+    border: 3px solid black;
+}
+
+#logo {
+    color: gray;
+}

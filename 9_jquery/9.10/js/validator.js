@@ -3,12 +3,10 @@ $(function () {
 
     window.Validator = function (val, rule) {
 
-        /*
-        {
+        /*{
             max: 100,
             min: 18
-        } 
-         */
+        }*/
         this.is_valid = function (new_val) {
             var key;
             val = new_val || val;
