@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .active {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <ul v-for="url in weburl">
+            <li>
+                <a v-bind:href="url.url">{{ url.name }}</a>
+            </li>
+            <li>
+                <img v-bind:src="url.imgsrc" alt="">
+            </li>
+            <li v-bind:class="{active: url.isActive}">
+                hongse
+            </li>
+        </ul>
+        <!-- 可以省略v-bind 直接 :
+        <p :class="{active: isActive}">qweqweqwe</p> -->
+    </div>
+</body>
+<script src="../lib/vue.js"></script>
+<script src="js/main.js"></script>
+</html>

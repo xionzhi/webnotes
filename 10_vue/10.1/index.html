@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            <input type="text" name="" id="" v-model="a">
+            <span v-show="a">{{ a }}</span>
+        </div>
+        <div>
+            <input type="text" name="" id="" v-model="b">
+            <span v-show="b">{{ b }}</span>
+        </div>
+        <div>
+            <input type="text" name="" id="" v-model="c">
+            <span v-show="c">{{ c }}</span>
+        </div>
+        <div>
+            <input type="text" name="" id="" v-model="d">
+            <span v-show="d">{{ c }}</span>
+        </div>
+        <div>
+            <input type="text" name="" id="" v-model="e">
+            <span v-show="e">{{ e }}</span>
+        </div>
+    </div>
+</body>
+<script src="../lib/vue.js"></script>
+<script>
+    var app = new Vue({
+        el: '#app',
+        data: {
+            a: null,
+            b: null,
+            c: null,
+            d: null,
+            e: null
+        }
+    });
+</script>
+
+</html>

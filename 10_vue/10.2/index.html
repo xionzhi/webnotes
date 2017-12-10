@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <ul v-for="food in foodList">
+            <li >商品名称：{{ food.name }}</li>
+            <li >商品价格：{{ food.price }}</li>
+            <li >商品折扣：{{ food.discount }}</li>
+            <li >商品折后价：{{ food.price * food.discount }}</li>
+        </ul>
+    </div>
+</body>
+<script src="../lib/vue.js"></script>
+<script src="main.js"></script>
+</html>

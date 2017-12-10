@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            <label>
+                男:
+                <input name="sex" value="male" type="radio">
+            </label>
+            <label>
+                女:
+                <input name="sex" value="female" type="radio">
+            </label>
+            <br>
+            <label>
+                男:
+                <input v-model="sex" value="male" type="radio">
+            </label>
+            <label>
+                女:
+                <input v-model="sex" value="female" type="radio">
+            </label>
+            <span> | {{ sex }}</span>
+            <hr>
+            <label>
+                男:
+                <input v-model="like" value="male1" type="checkbox">
+            </label>
+            <label>
+                男:
+                <input v-model="like" value="male2" type="checkbox">
+            </label>
+            <label>
+                女:
+                <input v-model="like" value="female" type="checkbox">
+            </label>
+            <span> | {{ like }}</span>
+            <hr>
+        </div>
+
+        <div>
+            <textarea v-model="article" cols="40" rows="5"></textarea>
+            <p>{{ article }}</p>
+            <hr>
+        </div>
+
+        <div>
+            <div>你来自哪里:</div>
+            <select v-model="form">
+                <option value="1">赵家屯</option>
+                <option value="2">李家庄</option>
+                <option value="3">王家沟</option>
+                <option value="4">背背山</option>
+            </select>
+            {{ form }}
+            <br><br>
+            <div>你要去哪里: ctrl shift</div>
+            <select v-model="dest" multiple style="height:200px">
+                <option value="1">赵家屯</option>
+                <option value="2">李家庄</option>
+                <option value="3">王家沟</option>
+                <option value="4">背背山</option>
+                <option value="5">赵家屯</option>
+                <option value="6">李家庄</option>
+                <option value="7">王家沟</option>
+                <option value="8">背背山</option>
+            </select>
+            {{ dest }}
+            <hr>
+        </div>
+
+
+    </div>
+</body>
+<script src="../../lib/vue.js"></script>
+<script src="js/main.js"></script>
+
+</html>

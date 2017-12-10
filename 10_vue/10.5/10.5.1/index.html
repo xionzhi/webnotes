@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        pre {
+            background-color: rgba(0, 0, 0, .2);
+            font-size: 28px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div>
+            <!-- 即时绑定数据 -->
+            <p>v-model</p>
+            <input type="text" v-model="name">
+            <pre>{{ name }}</pre>
+            <br>
+        </div>
+        <div>
+            <!-- 失焦时触发 -->
+            <p>v-model.lazy</p>
+            <input type="text" v-model.lazy="name0">
+            <pre>{{ name0 }}</pre>
+            <br>
+        </div>
+        <div>
+            <!-- 去除两端空格 -->
+            <p>v-model.trim</p>
+            <input type="text" v-model.trim="name1">
+            <pre>{{ name1 }}</pre>
+            <br>
+        </div>
+        <div>
+            <!-- 设置为 数字类型 -->
+            <p>v-model.number</p>
+            <input type="text" v-model.number="name2">
+            <pre>{{ name2 }}</pre>
+            <br>
+        </div>
+    </div>
+</body>
+<script src="../../lib/vue.js"></script>
+<script src="js/main.js"></script>
+
+</html>
