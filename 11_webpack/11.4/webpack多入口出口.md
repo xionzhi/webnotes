@@ -1,8 +1,11 @@
-# webpack 安装和配置
+### 〇.写在前面
+- 一. webpack 安装
+- 二. webpack 基本配置
+- 三. webpack 多入口出口配置
 
-## 一. webpack 安装
+>### 一. webpack 安装
 
-### 1.安装 node 和 npm
+#### 1.安装 node 和 npm
 
 * 去node官网下载 https://nodejs.org
 * 是什么平台就下载什么平台
@@ -11,13 +14,13 @@
     * node -v  查看node 版本
     * npm -v   查看npm 版本
 
-### 2.安装webpack
+#### 2.安装webpack
 
 * 可局部也可以全局安装
     * npm install webpack 局部安装
     * npm i webpack -g    全局安装
 
-### 3.使用webpack
+#### 3.使用webpack
 
 - 文件 a.js
 
@@ -56,9 +59,9 @@ console.log(hello + ' ' + world);
     * 建议`npm init`再局部安装各种依赖包,
     * 然后来需要配置局部`webpack`
 
-## 二. webpack 基本配置
+>### 二. webpack 基本配置
 
-### 1.npm init初始化目录
+#### 1.npm init初始化目录
 
 - npm 初始化目录
 ```bash
@@ -75,7 +78,7 @@ console.log(hello + ' ' + world);
 # -D 意思为 --save-dev
 > npm i webpack -D
 ```
-### 2.使用局部环境下的webpack
+#### 2.使用局部环境下的webpack
 
 - 使用局部webpack
 
@@ -100,7 +103,7 @@ console.log(hello + ' ' + world);
 > npm run pack
 ```
 
-### 3.使用配置文件`webpack.config.js`
+#### 3.使用配置文件`webpack.config.js`
 
 - 在当前目录创建文件`webpack.config.js`
 
@@ -136,9 +139,9 @@ module.exports = {
 # 再次生成文件 bundle.js
 ```
 
-## 三. webpack 多入口出口配置
+>### 三. webpack 多入口出口配置
 
-### 1.我的目录结构
+#### 1.我的目录结构
 
 ```txt
 test/
@@ -158,7 +161,7 @@ test/
     |···
 ```
 
-### 2.更改配置
+#### 2.更改配置
 
 - 编辑配置文件 `webpack.config.js`
 
@@ -172,13 +175,27 @@ module.exports = {
         // [name] 指代表 entry 的键名
         filename: '[name].bundle.js',
         // distributable 可分发的
+        // dist 是传统似乎也成了标准
         path: __dirname + '/dist',
     }
 }
 ```
 
-### 3.详情可以移步github
+#### 3.详情可以移步github
 
-- https://github.com/Zhiing/mywebdemo/11_webpack/11.4
+- https://github.com/Zhiing/mywebdemo/tree/master/11_webpack/11.4
 
--
+```txt
+fuck
+```
+
+- 运行demo
+
+```bash
+# 下载相关依赖
+npm install
+# 使用webpack打包文件
+npm run pack
+# 启动服务
+http-server
+```
