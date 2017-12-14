@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .panel {
+            max-width: 300px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+
+        .panel>* {
+            padding: 10px;
+        }
+
+        .panel .title {
+            border-bottom: 1px solid black;
+            font-weight: 700;
+        }
+
+        .panel .footer {
+            border-top: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <panel>
+            <!-- <div slot="title">Program A</div> -->
+            <div slot="content">Program A</div>
+            <div slot="footer">Program A</div>
+        </panel>
+        <panel>
+            <div slot="title">Program B</div>
+            <div slot="content">Program B</div>
+            <!-- <div slot="footer">Program B</div> -->
+        </panel>
+        <panel></panel>
+    </div>
+
+    <template id="panel-tpl">
+        <div class="panel">
+            <div class="title">
+                <slot name="title">
+                    Undefined
+                </slot>
+            </div>
+            <div class="content">
+                <slot name="content">
+                    Undefined
+                </slot>
+            </div>
+            <div class="footer">
+                <slot name="footer">
+                    Undefined
+                </slot>
+            </div>
+        </div>
+    </template>
+</body>
+
+<script src="../lib/vue.js"></script>
+<script src="js/main.js"></script>
+
+</html>

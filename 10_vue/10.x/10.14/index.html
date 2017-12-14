@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        a {
+            color: red;
+        }
+
+        .card {
+            width: 400px;
+            padding: 20px;
+            float: left;
+            margin: 20px;
+            background-color: rgba(0, 0, 0, .2);
+        }
+
+        .hh {
+            width: 500px;
+            background-color: rgba(0, 0, 0, .02);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <div v-pin="card1.pinned" class="card">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati assumenda nemo architecto corporis tempora ex sapiente
+            laborum saepe dolor eveniet quis aspernatur, dignissimos ab a vitae quasi sint nam ipsa!
+            <a @click="card1.pinned = !card1.pinned">固定/取消</a>
+        </div>
+        <!-- <div v-pin="card2.pinned" class="card">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem voluptate sapiente sed esse omnis a repellendus voluptatum,
+            temporibus magni mollitia quos deserunt tempora ducimus. Maxime delectus porro dolore officiis earum.
+            <a @click="card2.pinned = !card2.pinned">固定/取消</a>
+        </div> -->
+
+        <div class="hh">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consectetur recusandae nam laborum nesciunt atque, reprehenderit nobis accusantium architecto sapiente perspiciatis inventore numquam voluptatibus vel culpa quo deserunt dolor, dolorum ex?</p>
+        </div>
+    </div>
+</body>
+<script src="../lib/vue.js"></script>
+<script src="js/main.js"></script>
+
+</html>
